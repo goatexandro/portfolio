@@ -1,0 +1,696 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header h1 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #15ff00, 0 0 5px #052482, 0 0 5px #00ff04, 0 0 5px #031893, 0 0 5px #1eff00;
+}
+.hr{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.hr p{
+    text-align:center ;
+    color:rgb(1, 179, 1);
+    font-weight: bold;
+    font-size: 15px;
+        
+}
+.todo_info{
+    display: grid;
+ grid-template-columns: auto auto auto auto ;
+ gap: 15px;
+ justify-content:space-around
+}
+
+.card{
+max-width: 300px;
+margin-top: 40px;
+margin-bottom: 40px;
+border: 1px solid #00fa15;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card :hover{
+color: #00f158;
+}
+
+.card img{
+    width: 300px;
+    height: 150px;
+border-bottom: 1px solid #00f158;
+}
+
+
+.contenido{
+padding: 16px;
+}
+
+
+.contenido p{
+color: #7c7777;
+
+}
+
+.contenido a{
+display: block;
+text-decoration: none;
+color: #ffffff;
+font-weight: bold;
+}
+
+
+.contenedor{
+display: grid;
+grid-template-columns: auto auto auto;
+gap: 15px;
+padding: 20px;
+font-size: 11px;
+text-align: start ;
+}
+
+.contenedor .titulo{
+color:rgb(1, 179, 1);
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.contenedor .linea{
+border-left: 2px solid #ffffff;
+
+}
+
+.contenedor .segundo{
+text-align: start;
+
+
+}
+
+
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Modo claro */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode .card .contenido h2 a{
+    color: #000000;
+
+}
+
+body.light-mode .hr{
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.switch {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    display: inline-block;
+    width: 40px; 
+    height: 20px; 
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px; 
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px; 
+    width: 14px; 
+    left: 3px; 
+    bottom: 3px; 
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #1aff00;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px); /* Esto es para que cuando pulse el boton se mueva hacia la izquierda o derecha */
+}
+
+/* Estilos para el botón */
+button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+header, footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+.todo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 8px;
+    margin-bottom: -17px;
+    font-size: 11px;
+    text-align: start ;
+    background-color: #000000;
+    text-align: center;
+    margin-top: -20px;
+    }
+    
+    footer .columnas .titulo{
+    color:rgb(1, 179, 1);
+    }
+    
+    footer .columnas .titulo2{
+    color:rgb(1, 179, 1);
+    }
+    
+    
+    footer .columnas .descripcion{
+        color: #555;
+    }
+    
+    footer .columnas .iconos{
+    font-size: 20px;
+    color:rgb(1, 179, 1);
+    }
+
+/*formulario*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.card2 {
+    width: 48%; /* Ajusta el ancho según tus necesidades */
+    border: 1px solid #00f158;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.card2:hover{
+    box-shadow: 0 0 10px #00f158, 0 0 20px #00f158, 0 0 30px #00f158, 0 0 40px #00f158, 0 0 70px #00f158, 0 0 80px #00f158, 0 0 100px #00f158, 0 0 150px #00f158;
+
+}
+
+.card2 .titulo:hover{
+    color: #00f158;
+
+}
+
+.card2 .contenido p:hover{
+    color: #00f158;
+
+}
+
+.contact-form {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    padding: 20px;
+    border: 1px solid #00f158;
+    border-radius: 8px;
+}
+
+.contact-form:hover{
+    box-shadow: 0 0 10px #00f158, 0 0 20px #00f158, 0 0 30px #00f158, 0 0 40px #00f158, 0 0 70px #00f158, 0 0 80px #00f158, 0 0 100px #00f158, 0 0 150px #00f158;
+
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+/***********************************/
+
+/* Menú Hamburguesa */
+.menu-hamburguesa {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-hamburguesa i {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu.active {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+/*MOVIL*/
+@media(min-width:300px) and (max-width: 667px){
+    /*header*/
+ 
+    body{
+     width: fit-content;
+    }
+ header{
+    background-color: #000000;
+     width: auto;
+ 
+ }
+     nav {
+         display: grid;
+         grid-template-columns: auto auto ;
+         gap: 15px;
+         padding: 20px;
+         font-size: 11px;
+         font-weight: bold;
+         
+        }
+ 
+        nav .primero p{
+         border: 1px solid #d6e0d7;
+        border-radius: 10px;
+        padding:5px;
+        background-color: #ffffff;
+ 
+        
+        }
+ 
+        nav .segundo{
+         display: none;
+        }
+ 
+        nav .tercero{
+         text-align: end;
+        
+        }
+  nav .tercero a{
+ 
+     border: 1px solid #d6e0d7;
+     border-radius: 10px;
+     padding:5px;
+     background-color: #ffffff;
+ 
+        }
+ 
+ 
+     header h2{
+       
+         text-align:center ;
+     }
+ 
+     .hr{
+         background-color: rgb(255, 255, 255);
+         margin-left: -30px;
+ 
+     }
+ 
+     .hr p{
+         text-align:center ;
+         color:rgb(1, 179, 1);
+         font-weight: bold;
+         font-size: 15px;
+       
+            
+     }
+        /*fin del header*/
+ 
+        /*main*/
+    /*solamente puse el enlace externo en una porque en las demas al ser offline por decirlo de alguna forma, pues no hay manera de poner enlaces*/
+     
+        .todo_info{
+         display: grid;
+      grid-template-columns: auto ;
+      justify-content:space-around;
+      gap: 15px;
+     }
+ 
+        
+ .card{
+     max-width: 300px;
+     border: 1px solid #00fa15;
+     border-radius: 8px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+ }
+ 
+ .card img{
+    width: 300px;
+    height: 150px;
+border-bottom: 1px solid #00f158;
+}
+ 
+ .contenido{
+     padding: 16px;
+ }
+ 
+ 
+ .contenido p{
+     color: #555;
+ 
+ }
+ 
+ .contenido a{
+     display: block;
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: bold;
+ }
+ 
+ 
+ 
+
+ 
+ .container {
+    flex-direction: column; /* Cambia a una columna en dispositivos móviles */
+}
+
+.container .titulo{
+    color:rgb(1, 179, 1);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.card2{
+width: 100%;
+}
+
+ 
+ .contenedor .segundo{
+ text-align: start;
+ 
+ }
+ 
+ 
+        /*fin del main*/
+ /*footer*/
+ 
+ .todo{
+     display: grid;
+     grid-template-columns: auto auto auto;
+     gap: 15px;
+     padding: 20px;
+     margin-top: 8px;
+     margin-bottom: -17px;
+     font-size: 11px;
+     text-align: start ;
+     background-color: #000000;
+ }
+ 
+ footer .columnas .titulo{
+     color:rgb(1, 179, 1);
+ }
+ 
+ 
+ footer .columnas .titulo2{
+     display:none;
+ }
+ 
+ 
+ footer .columnas .descripcion{
+     display: none;
+ }
+ 
+ footer .columnas .iconos{
+     font-size: 20px;
+     color:rgb(1, 179, 1);
+ }
+ /*fin del footer*/
+        
+     }
+
+
+     /*TABLET*/
+    @media(min-width:820px) and (max-width: 1180px){
+        /*header*/
+      
+   body{
+    width: fit-content;
+   }
+header{
+    background-color: #000000;
+
+    width: auto;
+
+}
+         nav {
+             display: grid;
+             grid-template-columns: auto auto;
+             gap: 15px;
+             padding: 20px;
+             font-size: 11px;
+             font-weight: bold;
+         
+            }
+     
+                nav .primero a{
+                border: 1px solid #d6e0d7;
+                border-radius: 10px;
+                padding:5px;
+                background-color: #ffffff;
+
+                }
+     
+            nav .segundo{
+            display: none;
+            }
+
+            nav .tercero{
+             text-align: end;
+          
+            }
+                nav .tercero a{
+     
+                border: 1px solid #d6e0d7;
+                border-radius: 10px;
+                padding:5px;
+                background-color: #ffffff;
+
+                }
+     
+     
+         header h2{
+             text-align:center ;
+         }
+     
+         .hr{
+             background-color: rgb(255, 255, 255);
+         }
+     
+         .hr p{
+             text-align:center ;
+             color:rgb(1, 179, 1);
+             font-weight: bold;
+             font-size: 15px;
+         }
+            /*fin del header*/
+     
+            /*main*/
+        
+            .todo_info{
+                display: grid;
+             grid-template-columns: auto auto ;
+             gap: 15px;
+             justify-content:space-around;
+            }
+
+     .card{
+         max-width: 300px;
+         border: 1px solid #00fa15;
+         border-radius: 8px;
+         overflow: hidden;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     }
+     
+     .card img{
+        width: 300px;
+        height: 150px;
+    border-bottom: 1px solid #00f158;
+    }
+     
+     .contenido{
+         padding: 16px;
+     }
+     
+    
+     
+     .contenido p{
+         color: #555;
+     
+     }
+     
+     .contenido a{
+         display: block;
+         text-decoration: none;
+         color: #ffffff;
+         font-weight: bold;
+     }
+     
+     
+     .contenedor{
+         display: grid;
+         grid-template-columns: auto auto auto;
+         gap: 15px;
+         padding: 20px;
+         font-size: 11px;
+         text-align: start ;
+     }
+     
+     .contenedor .titulo{
+         color:rgb(1, 179, 1);
+         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+     }
+     
+ 
+     
+     .contenedor .linea{
+         border-left: 2px solid #ffffff;
+     }
+     
+     .contenedor .segundo{
+     text-align: start;
+   
+     
+     }
+     
+
+            /*fin del main*/
+     /*footer*/
+     .todo{
+         display: grid;
+         grid-template-columns: auto auto auto;
+         gap: 15px;
+         padding: 20px;
+         font-size: 11px;
+         margin-top: 8px;
+         margin-bottom: -17px;
+         text-align: start ;
+         background-color: #000000;
+         text-align: center;
+     }
+     
+     footer .columnas .titulo{
+         color:rgb(1, 179, 1);
+     }
+
+     footer .columnas .titulo2{
+        display:none;
+    }
+     
+     footer .columnas .descripcion{
+         display: none;
+     }
+     
+     footer .columnas .iconos{
+         font-size: 20px;
+         color:rgb(1, 179, 1);
+     }
+     /*fin del footer*/
+            
+         }
+
