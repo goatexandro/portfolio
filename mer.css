@@ -243,7 +243,7 @@ header, footer {
 }
 
 .card2:hover{
-    box-shadow: 0 0 10px #00f158, 0 0 20px #00f158, 0 0 30px #00f158, 0 0 40px #00f158, 0 0 70px #00f158, 0 0 80px #00f158, 0 0 100px #00f158, 0 0 150px #00f158;
+    box-shadow: 0 0 10px #00f158, 0 0 20px #00f158, 0 0 20px #00f158, 0 0 20px #00f158, 0 20px #00f158, 0 0 20px #00f158, 0 0 20px #00f158, 0 0 20px #00f158;
 
 }
 
@@ -265,7 +265,7 @@ header, footer {
 }
 
 .contact-form:hover{
-    box-shadow: 0 0 10px #00f158, 0 0 20px #00f158, 0 0 30px #00f158, 0 0 40px #00f158, 0 0 70px #00f158, 0 0 80px #00f158, 0 0 100px #00f158, 0 0 150px #00f158;
+    box-shadow: 0 0 10px #00f158, 0 0 20px #00f158, 0 0 20px #00f158, 0 0 20px #00f158, 0 0 20px #00f158, 0 0 20px #00f158, 0 0 20px #00f158, 0 0 20px #00f158;
 
 }
 
@@ -307,6 +307,32 @@ header, footer {
     height: 120px;
 }
 
+/*****************************/
+@media(min-width:1181px) and (max-width: 5000px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Espacio entre el card2 y el formulario */
+    }
+    
+    .card2{
+        margin-bottom: 30px;
+    }
+
+    .card2, .form-container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .form-container .contact-form h2 {
+        text-align: center;
+    }
+    
+   
+   
+    
+   
+}
 /***********************************/
 
 /* Menú Hamburguesa */
@@ -478,7 +504,9 @@ border-bottom: 1px solid #00f158;
 
 .card2{
 width: 100%;
+margin-bottom: 75px;
 }
+
 
  
  .contenedor .segundo{
